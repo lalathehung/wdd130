@@ -4,7 +4,6 @@ body, h1, p, nav, aside, footer {
   box-sizing: border-box;
 }
 
-/* Navigation Styles */
 nav {
   background-color: #f0f0f0;
   padding: 10px;
@@ -22,7 +21,6 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* Main Section */
 main {
   max-width: 800px;
   margin: 0 auto;
@@ -40,7 +38,6 @@ main p {
   font-size: 1em;
 }
 
-/* Aside Section */
 aside {
   max-width: 800px;
   margin: 20px auto;
@@ -58,7 +55,6 @@ aside img {
   margin: 10px 0;
 }
 
-/* Footer Styles */
 footer {
   margin-top: 20px;
   border-top: 1px solid #ccc;
@@ -69,7 +65,6 @@ footer {
   color: #666;
 }
 
-/* General Image Styles */
 img {
   max-width: 100%;
   height: auto;
