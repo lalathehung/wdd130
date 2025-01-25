@@ -1,0 +1,136 @@
+:root {
+    --primary-color: #A0A06A;
+    --secondary-color: #87AFD4;
+    --accent1-color: #DFDFCD;
+    --accent2-color: #D2E1EF;
+    --font-heading: 'Gravitas One', sans-serif;
+    --font-body: 'Merriweather', sans-serif;
+}
+
+/* Styles */
+body {
+    font-family: var(--font-body);
+    margin: 0;
+    padding: 0;
+    color: var(--primary-color);
+    background-color: var(--accent2-color);
+}
+
+header {
+    background-color: var(--secondary-color);
+    padding: 20px;
+    text-align: center;
+}
+
+header .mylogo img {
+    width: 120px;
+    height: auto;
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+    font-family: var(--font-heading);
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    background: url('../images/canada.jpg') no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h1 {
+    position: absolute;
+    color: white;
+    font-size: 3rem;
+    font-family: var(--font-heading);
+    text-shadow: 2px 2px 8px black;
+}
+
+.hero-content aside img {
+    float: right;
+    margin: 10px;
+    max-width: 200px;
+    height: auto;
+}
+
+.hero-content aside p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* History Section */
+.history {
+    padding: 20px;
+    background-color: var(--accent1-color);
+}
+
+.history h2 {
+    font-family: var(--font-heading);
+    color: var(--secondary-color);
+}
+
+.history p {
+    line-height: 1.8;
+}
+
+/* Adventure Section */
+.adventure {
+    padding: 20px;
+    text-align: center;
+}
+
+.adventure h2 {
+    font-family: var(--font-heading);
+    color: var(--secondary-color);
+}
+
+.adventure .pictures {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.adventure figure {
+    text-align: center;
+}
+
+.adventure figure img {
+    max-width: 200px;
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+}
+
+.adventure figure figcaption {
+    margin-top: 10px;
+    font-family: var(--font-body);
+    color: var(--primary-color);
+}
+
+/* Footer */
+footer {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+footer .sociallinks a {
+    margin: 0 5px;
+}
+
+footer .sociallinks img {
+    width: 25px;
+    height: auto;
+    text-decoration: none;
+}
