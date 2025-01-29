@@ -50,20 +50,33 @@ nav a:hover {
 
 .hero h1 {
     position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: white;
     font-size: 3rem;
     font-family: var(--font-heading);
     text-shadow: 2px 2px 8px black;
 }
 
-.hero-content aside img {
+.hero article {
+    position: absolute;
+    bottom: 10%;
+    right: 5%;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 8px;
+    max-width: 300px;
+}
+
+.hero article img {
     float: right;
     margin: 10px;
-    max-width: 200px;
+    max-width: 150px;
     height: auto;
 }
 
-.hero-content aside p {
+.hero article p {
     font-size: 1rem;
     line-height: 1.5;
 }
