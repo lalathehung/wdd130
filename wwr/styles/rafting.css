@@ -17,24 +17,26 @@ body {
 }
 
 header {
-    background-color: var(--secondary-color);
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
     padding: 20px;
-    text-align: center;
+    background-color: var(--secondary-color);
 }
 
-header .mylogo img {
-    width: 120px;
-    height: auto;
+header nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
 }
 
-nav a {
-    margin: 0 10px;
+header nav a {
     text-decoration: none;
     color: white;
     font-family: var(--font-heading);
 }
 
-nav a:hover {
+header nav a:hover {
     text-decoration: underline;
 }
 
@@ -132,14 +134,18 @@ nav a:hover {
 
 /* Footer */
 footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: var(--secondary-color);
     color: white;
-    padding: 10px 0;
-    text-align: center;
+    padding: 10px 20px;
 }
 
-footer .sociallinks a {
-    margin: 0 5px;
+footer .sociallinks {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
 }
 
 footer .sociallinks img {
