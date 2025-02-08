@@ -7,7 +7,7 @@
     --font-body: 'Merriweather', sans-serif;
 }
 
-/* Global Styles */
+/* Styles */
 body {
     font-family: var(--font-body);
     margin: 0;
@@ -44,7 +44,7 @@ header nav a:hover {
 .hero {
     position: relative;
     background: url('../images/canada.jpg') no-repeat center center/cover;
-    height: 300px;
+    height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -52,87 +52,84 @@ header nav a:hover {
 
 .hero h1 {
     position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: white;
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-family: var(--font-heading);
     text-shadow: 2px 2px 8px black;
 }
 
-/* Map Section */
-.map-embed {
-    border: none;
-    width: 100%;
-    height: 300px;
+.hero article {
+    position: absolute;
+    bottom: 10%;
+    right: 5%;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px;
     border-radius: 8px;
-    margin-top: 10px;
+    max-width: 300px;
 }
 
-/* Form Section */
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+.hero article img {
+    float: right;
+    margin: 10px;
+    max-width: 150px;
+    height: auto;
+}
+
+.hero article p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* History Section */
+.history {
     padding: 20px;
     background-color: var(--accent1-color);
-    border-radius: 8px;
 }
 
-.form-group {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
-
-input, textarea, button {
-    padding: 10px;
-    border: 1px solid var(--primary-color);
-    border-radius: 5px;
-    font-family: var(--font-body);
-}
-
-button {
-    background-color: var(--secondary-color);
-    color: white;
+.history h2 {
     font-family: var(--font-heading);
-    font-size: 1rem;
-    cursor: pointer;
+    color: var(--secondary-color);
 }
 
-button:hover {
-    background-color: var(--primary-color);
+.history p {
+    line-height: 1.8;
 }
 
-.radio-label, .checkbox-label {
-    display: flex;
-    align-items: center;
-    gap: 5px;
+/* Adventure Section */
+.adventure {
+    padding: 20px;
+    text-align: center;
 }
 
-/* Employee Profiles Section */
-.employee-profiles {
+.adventure h2 {
+    font-family: var(--font-heading);
+    color: var(--secondary-color);
+}
+
+.adventure .pictures {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
-    padding: 20px;
 }
 
-.employee {
-    background-color: var(--accent2-color);
-    padding: 15px;
-    border-radius: 8px;
+.adventure figure {
     text-align: center;
-    flex: 1 1 300px;
 }
 
-.employee img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 50%;
+.adventure figure img {
+    max-width: 200px;
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
 }
 
-.employee p {
+.adventure figure figcaption {
     margin-top: 10px;
     font-family: var(--font-body);
+    color: var(--primary-color);
 }
 
 /* Footer */
@@ -157,7 +154,99 @@ footer .sociallinks img {
     text-decoration: none;
 }
 
-/* Responsive Design */
+/* Contact Page Specific Styles */
+
+/* Google Map Section */
+.map-embed {
+    border: none;
+    width: 100%;
+    height: 300px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+/* Form Section */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    background-color: var(--accent1-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+input, textarea, button {
+    padding: 10px;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    font-family: var(--font-body);
+    font-size: 1rem;
+}
+
+textarea {
+    resize: none;
+}
+
+button {
+    background-color: var(--secondary-color);
+    color: white;
+    font-family: var(--font-heading);
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--primary-color);
+}
+
+.radio-label, .checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Employee Profiles Section */
+.employee-profiles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.employee {
+    background-color: var(--accent2-color);
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    flex: 1 1 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.employee img {
+    max-width: 100px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.employee p {
+    font-family: var(--font-body);
+    margin-top: 10px;
+    line-height: 1.5;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design for Contact Page */
 @media (max-width: 768px) {
     .employee-profiles {
         flex-direction: column;
