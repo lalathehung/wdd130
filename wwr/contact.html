@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>White Water Rafting - Contact Us</title>
-    <meta name="description" content="Lok Yin Arthur Leung's WDD 130 Whitewater Rafting Website - Contact Us">
+    <meta name="description" content="Get in touch with White Water Rafting. Contact us for inquiries, reservations, and suggestions.">
     <meta name="author" content="Lok Yin Arthur Leung">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,7 +14,7 @@
 <body>
     <header>
         <div class="mylogo">
-            <img src="images/logo.png" alt="My Logo">
+            <img src="images/logo.png" alt="Company Logo">
         </div>
         <nav>
             <a href="index.html">Home</a>
@@ -25,115 +25,93 @@
     </header>
     <main>
         <section class="hero">
-            <div class="hero-content">
-                <h1>White Water Rafting</h1>
-                <aside>
-                    <img src="images/adventure1.jpg" alt="Rafting Adventure">
-                    <p>Join us for an unforgettable rafting experience! Our rafting tours are suitable for everyone, from beginners to experts.</p>
-                </aside>
+            <h1>Contact Us</h1>
+        </section>
+
+        <section class="maps-form">
+            <div class="map">
+                <h2>Company Information</h2>
+                <p>Address: 10 Northridge Pkwy, Charlottetown, PE C1C 1L6</p>
+                <p>Phone: (902) 566-1013</p>
+                <p>Email: inquiries@whitewaterraftingco.com</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d1562.2684304985278!2d-63.11192045416791!3d46.269340468714866!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sca!4v1739036709428!5m2!1sen!2sca" 
+                class="map-embed" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <fieldset class="form-group">
+                    <legend>Purpose of Message:</legend>
+                    <label class="radio-label">
+                        <input type="radio" name="purpose" value="inquiry" required> General Inquiry
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="purpose" value="reservation"> Reservation Question
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="purpose" value="suggestion"> Website Suggestion
+                    </label>
+                </fieldset>
+
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="newsletter"> Please subscribe me to the monthly newsletter
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit">Send Message</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="employee-profiles">
+            <div class="employee">
+                <img src="images/LeadGuide.jpg" alt="Michael Rivers - Lead Guide">
+                <p>Michael Rivers - Lead Guide</p>
+                <p>Michael is a seasoned river guide with years of experience navigating challenging waterways. His in-depth knowledge of local rivers, 
+                    combined with his commitment to safety, ensures that every trip is both thrilling and secure. 
+                    Michael's approachable nature and ability to adapt to any situation make him a favorite among guests. 
+                    He has a knack for creating memorable adventures while keeping everyone comfortable and confident</p>
+            </div>
+            <div class="employee">
+                <img src="images/OperationsManager.jpg" alt="Sophia Hart - Operations Manager">
+                <p>Sophia Hart - Operations Manager</p>
+                <p>Sophia has over a decade of expertise in coordinating outdoor adventures. She meticulously plans every detail of White Water Rafting trips, 
+                    ensuring seamless logistics and the highest safety standards. Sophia's leadership inspires the team to deliver unforgettable experiences, 
+                    all while maintaining a focus on efficiency and customer satisfaction.</p>
+            </div>
+            <div class="employee">
+                <img src="images/CustomerSupport.jpg" alt="Liam Hayes - Customer Support">
+                <p>Liam Hayes - Customer Support</p>
+                <p>Liam is the friendly face behind White Water Rafting's customer service. He goes above and beyond to assist clients, 
+                    from answering pre-trip questions to addressing feedback after the adventure. With his patience and quick problem-solving skills, 
+                    Liam ensures every guest feels valued and cared for throughout their journey.</p>
             </div>
         </section>
-        <section class="maps-form">
-        <div class="map">
-            <h2>Company information</h2>
-            <p>Address: 10 Northridge Pkwy, Charlottetown, PE C1C 1L6</p>
-            <p>Phone: (902) 566-1013</p>
-            <p>Email: inquiries@whitewaterraftingco.com</p>
-            <br>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d1562.2684304985278!2d-63.11192045416791!3d46.269340468714866!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sca!4v1739036709428!5m2!1sen!2sca"  
-            class="map-embed" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-       
-        <section>
-     <form action="#" method="post">
-    <div class="form-group">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-    </div>
-    
-    <div class="form-group">
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-    </div>
-    
-    <fieldset class="form-group">
-        <legend>Purpose of Message:</legend>
-        <label class="radio-label" for="purpose-inquiry">
-            <input type="radio" id="purpose-inquiry" name="purpose" value="inquiry" required> General Inquiry
-        </label>
-        <label class="radio-label" for="purpose-reservation">
-            <input type="radio" id="purpose-reservation" name="purpose" value="reservation"> Reservation Question
-        </label>
-        <label class="radio-label" for="purpose-suggestion">
-            <input type="radio" id="purpose-suggestion" name="purpose" value="suggestion"> Website Suggestion
-        </label>
-    </fieldset>
-
-    <div class="form-group">
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
-    </div>
-
-    <div class="form-group">
-        <label class="checkbox-label" for="newsletter">
-            <input type="checkbox" id="newsletter" name="newsletter"> Please subscribe me to the monthly newsletter
-        </label>
-    </div>
-
-    <div class="form-group">
-        <button type="submit">Send Message</button>
-    </div>
-     </form>
-        </section>
-        </section>
-            <section class="employee-profiles">
-                <div class="employee">
-                    <img src="images/LeadGuide.jpg" alt="Michael Rivers - Lead Guide">
-                    <p>Michael Rivers - Lead Guide</p>
-                    <br>
-                    <p>Michael is a seasoned river guide with years of experience navigating challenging waterways. His in-depth knowledge of local rivers, 
-                        combined with his commitment to safety, ensures that every trip is both thrilling and secure. 
-                        Michael's approachable nature and ability to adapt to any situation make him a favorite among guests. 
-                        He has a knack for creating memorable adventures while keeping everyone comfortable and confident.</p>
-                          <br>
-                          <p> Merits: Certified Wilderness First Responder, praised for exceptional leadership on the water, and renowned for expert navigation skills.</p>
-                </div>
-                <div class="employee">
-                    <img src="images/OperationsManager.jpg" alt="Sophia Hart - Operations Manager">
-                    <p>Sophia Hart - Operations Manager</p>
-                    <br>
-                    <p>Sophia has over a decade of expertise in coordinating outdoor adventures. She meticulously plans every detail of White Water Rafting trips, 
-                        ensuring seamless logistics and the highest safety standards. Sophia's leadership inspires the team to deliver unforgettable experiences, 
-                        all while maintaining a focus on efficiency and customer satisfaction.</p>
-                        <br>
-                         <p>Merits: Certified in outdoor risk management, known for outstanding organizational expertise, and a proven leader in adventure tourism..</p>
-                </div>
-                <div class="employee">
-                    <img src="images/CustomerSupport.jpg" alt="Liam Hayes - Customer Support">
-                    <p>Liam Hayes - Customer Support</p>
-                    <br>
-                    <p>Liam is the friendly face behind White Water Rafting's customer service. He goes above and beyond to assist clients, 
-                        from answering pre-trip questions to addressing feedback after the adventure. With his patience and quick problem-solving skills, 
-                        Liam ensures every guest feels valued and cared for throughout their journey.</p>
-                        <br>
-                         <p>Merits: Recognized for exceptional customer service, skilled at resolving issues swiftly, and celebrated for outstanding communication and attentiveness.</p>
-                </div>
-            </section>
     </main>
     <footer>
         <div class="footers">
             <p>&copy; 2025 🚣 White Water Rafting 🚣 Lok Yin Arthur Leung 🚣</p>
-            <a href="wireframe.html">wireframe</a>
+            <a href="wireframe.html">Wireframe</a>
             <nav class="sociallinks">
-                <a href="https://facebook.com">
-                    <img src="images/facebook.png" alt="Facebook">
-                </a>
-                <a href="http://twitter.com">
-                    <img src="images/X.png" alt="Twitter">
-                </a>
-                <a href="http://instagram.com">
-                    <img src="images/instagram.jpg" alt="Instagram">
-                </a>
+                <a href="https://facebook.com"><img src="images/facebook.png" alt="Facebook"></a>
+                <a href="https://twitter.com"><img src="images/X.png" alt="Twitter"></a>
+                <a href="https://instagram.com"><img src="images/instagram.jpg" alt="Instagram"></a>
             </nav>
         </div>
     </footer>
