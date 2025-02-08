@@ -7,7 +7,7 @@
     --font-body: 'Merriweather', sans-serif;
 }
 
-/* Styles */
+/* Styles for All Pages */
 body {
     font-family: var(--font-body);
     margin: 0;
@@ -152,4 +152,108 @@ footer .sociallinks img {
     width: 25px;
     height: auto;
     text-decoration: none;
+}
+
+/* Additional Styles for Contact Page */
+
+/* Google Map Section */
+.map-embed {
+    border: none;
+    width: 100%;
+    height: 300px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+/* Form Section */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    background-color: var(--accent1-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+input, textarea, button {
+    padding: 10px;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    font-family: var(--font-body);
+    font-size: 1rem;
+}
+
+textarea {
+    resize: none;
+}
+
+button {
+    background-color: var(--secondary-color);
+    color: white;
+    font-family: var(--font-heading);
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--primary-color);
+}
+
+.radio-label, .checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Employee Profiles Section */
+.employee-profiles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.employee {
+    background-color: var(--accent2-color);
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    flex: 1 1 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.employee img {
+    max-width: 100px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.employee p {
+    font-family: var(--font-body);
+    margin-top: 10px;
+    line-height: 1.5;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design for Contact Page */
+@media (max-width: 768px) {
+    .employee-profiles {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    form {
+        width: 100%;
+    }
 }
