@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>White Water Rafting - Contact Us</title>
     <meta name="description" content="Get in touch with White Water Rafting. Contact us for inquiries, reservations, and suggestions.">
     <meta name="author" content="Lok Yin Arthur Leung">
+    <title>White Water Rafting - Contact Us</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gravitas+One&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
@@ -13,107 +13,93 @@
 </head>
 <body>
     <header>
-        <div class="mylogo">
-            <img src="images/logo.png" alt="Company Logo">
-        </div>
+        <img src="images/logo.png" alt="My Logo">
         <nav>
             <a href="index.html">Home</a>
-            <a href="about.html">About</a>
+            <a href="about.html">About Us</a>
             <a href="trips.html">Trips</a>
             <a href="contact.html">Contact Us</a>
         </nav>
     </header>
     <main>
-        <section class="hero">
-            <h1>Contact Us</h1>
-        </section>
-
-        <section class="maps-form">
-            <div class="map">
-                <h2>Company Information</h2>
-                <p>Address: 10 Northridge Pkwy, Charlottetown, PE C1C 1L6</p>
-                <p>Phone: (902) 566-1013</p>
-                <p>Email: inquiries@whitewaterraftingco.com</p>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d1562.2684304985278!2d-63.11192045416791!3d46.269340468714866!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sca!4v1739036709428!5m2!1sen!2sca" 
-                class="map-embed" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="hero">
+            <img src="images/adventure2.jpg" alt="adventure2">
+            <h1><b>White Water Rafting</b></h1>
+            <article>
+                <img src="images/happy_client.jpg" alt="a happy client">
+                <p>Join us for an unforgettable rafting experience! Our rafting tours are suitable for everyone, from beginners to experts.</p>
+            </article>
+        </div>
+        <div class="contact_container">
+            <div class="contact">
+                <h2>Contact Us</h2>
+                <p><strong>Address: </strong>10 Northridge Pkwy, Charlottetown, PE C1C 1L6</p>
+                <p><strong>Phone: </strong>(902) 566-1013</p>
+                <p><strong>Email: </strong>inquiries@whitewaterraftingco.com</p>
             </div>
-
-            <form action="#" method="post">
-                <div class="form-group">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
+            <div class="iframe">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d1562.2684304985278!2d-63.11192045416791!3d46.269340468714866!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sca!4v1739036709428!5m2!1sen!2sca" class="map-embed" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+            <div class="employees_profiles">
+                <h2>Meet Our Team!</h2>
+                <div class="employees">
+                    <section class="employee">
+                        <img src="images/LeadGuide.jpg" alt="an employee of the rips rafting site">
+                        <p>Michael Rivers - Lead Guide</p>
+                    </section>
+                    <section class="employee">
+                        <img src="images/OperationsManager.jpg" alt="an employee of the rips rafting site">
+                        <p>Sophia Hart - Operations Manager</p>
+                    </section>
+                    <section class="employee">
+                        <img src="images/CustomerSupport.jpg" alt="an employee of the rips rafting site">
+                        <p>Liam Hayes - Customer Support</p>
+                    </section>
                 </div>
-
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-
-                <fieldset class="form-group">
-                    <legend>Purpose of Message:</legend>
-                    <label class="radio-label">
-                        <input type="radio" name="purpose" value="inquiry" required> General Inquiry
-                    </label>
-                    <label class="radio-label">
-                        <input type="radio" name="purpose" value="reservation"> Reservation Question
-                    </label>
-                    <label class="radio-label">
-                        <input type="radio" name="purpose" value="suggestion"> Website Suggestion
-                    </label>
+        </div>
+        <div class="form">
+            <h2>We Want to Hear From You!</h2>
+            <form>
+                <fieldset class="field">
+                    <legend>Contact Information</legend>
+                        <label for="username">Name</label>
+                        <input type="text" id="username" name="username"><br>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email">
                 </fieldset>
-
-                <div class="form-group">
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="4" required></textarea>
-                </div>
-
-                <div class="form-group">
-                    <label class="checkbox-label">
-                        <input type="checkbox" name="newsletter"> Please subscribe me to the monthly newsletter
-                    </label>
-                </div>
-
-                <div class="form-group">
+                <fieldset class="field">
+                    <legend>Purpose of Message</legend><br>
+                        <label for="general">General Inquiry</label>
+                        <input type="radio" id="general" name="purpose" value="general"><br>
+                        <label for="reservation">Reservation Question</label>
+                        <input type="radio" id="reservation" name="purpose" value="reservation"><br>
+                        <label for="website">Website Suggestion</label>
+                        <input type="radio" id="website" name="purpose" value="website"><br><br>
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Enter your message...." rows="4"></textarea>
+                </fieldset>
+                <div class="field checkbox">
+                    <input type="checkbox" id="suscribe" name="suscribe">
+                    <label for="suscribe">Please suscribe me to the monthly newsletter</label>
                     <button type="submit">Send Message</button>
                 </div>
             </form>
-        </section>
-
-        <section class="employee-profiles">
-            <div class="employee">
-                <img src="images/LeadGuide.jpg" alt="Michael Rivers - Lead Guide">
-                <p>Michael Rivers - Lead Guide</p>
-                <p>Michael is a seasoned river guide with years of experience navigating challenging waterways. His in-depth knowledge of local rivers, 
-                    combined with his commitment to safety, ensures that every trip is both thrilling and secure. 
-                    Michael's approachable nature and ability to adapt to any situation make him a favorite among guests. 
-                    He has a knack for creating memorable adventures while keeping everyone comfortable and confident</p>
-            </div>
-            <div class="employee">
-                <img src="images/OperationsManager.jpg" alt="Sophia Hart - Operations Manager">
-                <p>Sophia Hart - Operations Manager</p>
-                <p>Sophia has over a decade of expertise in coordinating outdoor adventures. She meticulously plans every detail of White Water Rafting trips, 
-                    ensuring seamless logistics and the highest safety standards. Sophia's leadership inspires the team to deliver unforgettable experiences, 
-                    all while maintaining a focus on efficiency and customer satisfaction.</p>
-            </div>
-            <div class="employee">
-                <img src="images/CustomerSupport.jpg" alt="Liam Hayes - Customer Support">
-                <p>Liam Hayes - Customer Support</p>
-                <p>Liam is the friendly face behind White Water Rafting's customer service. He goes above and beyond to assist clients, 
-                    from answering pre-trip questions to addressing feedback after the adventure. With his patience and quick problem-solving skills, 
-                    Liam ensures every guest feels valued and cared for throughout their journey.</p>
-            </div>
-        </section>
-    </main>
+        </div>
+      </main>  
     <footer>
-        <div class="footers">
-            <p>&copy; 2025 🚣 White Water Rafting 🚣 Lok Yin Arthur Leung 🚣</p>
-            <a href="wireframe.html">Wireframe</a>
-            <nav class="sociallinks">
-                <a href="https://facebook.com"><img src="images/facebook.png" alt="Facebook"></a>
-                <a href="https://twitter.com"><img src="images/X.png" alt="Twitter"></a>
-                <a href="https://instagram.com"><img src="images/instagram.jpg" alt="Instagram"></a>
-            </nav>
+        <p>&copy; 2025 🚣 White Water Rafting 🚣 Lok Yin Arthur Leung 🚣 <a href="https://app.moqups.com/FLaWuTi5i7EHiTXZNUA39Du7KD4N30Uj/view/page/ad12de680" target="_blank">Contact Us Wireframe</a></p>
+        <div class="icons">
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facebook.png" alt="facebook icon">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="images/X.png" alt="X icon">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="images/instagram.jpg" alt="instagram icon">
+            </a>
         </div>
     </footer>
-</body>
+</body>   
 </html>
