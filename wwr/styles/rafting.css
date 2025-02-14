@@ -503,11 +503,11 @@ thead th {
 }
 
 tbody > tr:nth-of-type(even) {
-    background-color: var(--accent2-color);
+    background-color: #c7c92e;
 }
 
 tbody > tr:nth-of-type(odd) {
-    background-color: #6b2f2f;
+    background-color: #22295e;
     color: #fff;
 }
 
